@@ -10,6 +10,7 @@ RUN curl -sSL https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | \
 # Install required packages
 RUN apt-get update && \
     apt-get install -y \
+    	git \
         software-properties-common \
         curl \
         gnupg \

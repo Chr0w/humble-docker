@@ -11,6 +11,9 @@ services:
       - type: bind
         source: /home/${USER}/ros2_ws
         target: /ros2_ws
+      - type: bind
+        source: /home/${USER}/repos/humble-docker
+        target: /repos/humble-docker
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - ./rosbot_pro.rviz:/root/.rviz2/default.rviz
     environment:
