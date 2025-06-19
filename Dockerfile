@@ -24,6 +24,3 @@ RUN apt-get update && \
         
 # Add the alias to the .bashrc file
 RUN echo "alias rviz='ros2 run rviz2 rviz2'" >> /root/.bashrc
-
-
-CMD [ "bash" ]

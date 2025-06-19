@@ -9,7 +9,7 @@ services:
     runtime: nvidia
     volumes:
       - type: bind
-        source: /home/${USER}/ros2_ws
+        source: /home/${USER}/phd/ros2_ws
         target: /ros2_ws
       - type: bind
         source: /home/${USER}/repos/humble-docker
