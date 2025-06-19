@@ -9,7 +9,7 @@ services:
     runtime: nvidia
     volumes:
       - type: bind
-        source: /home/mircrda/ros_container_ws
+        source: /home/${USER}/ros2_ws
         target: /ros2_ws
       - /tmp/.X11-unix:/tmp/.X11-unix:rw
       - ./rosbot_pro.rviz:/root/.rviz2/default.rviz
